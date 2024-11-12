@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,14 +15,21 @@
     /* Body Styling */
     body {
       font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f2f2f2;
+      flex-direction: column;
     }
 
-    /* Google Search Container */
+    /* Google Logo Styling */
+    .google-logo img {
+      width: 272px; /* Google logo size */
+      margin-bottom: 20px;
+    }
+
+    /* Search Bar Container */
     .google-search-container {
       text-align: center;
     }
@@ -30,22 +37,25 @@
     /* Search Box Styling */
     .search-box {
       width: 100%;
-      max-width: 600px;
-      margin-top: -50px;
+      max-width: 584px;
       background-color: white;
       border-radius: 24px;
       padding: 12px 20px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     /* Input Field Styling */
     .search-box input {
       width: 100%;
-      padding: 10px;
+      padding: 14px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 24px;
       outline: none;
+      max-width: 500px;
     }
 
     /* Input Focus State */
@@ -53,19 +63,51 @@
       border-color: #4285f4;
     }
 
-    /* Hide Button by Default */
-    .search-box button {
-      display: none;
+    /* Search Buttons Container */
+    .search-buttons {
+      margin-top: 20px;
+    }
+
+    /* Button Styling */
+    .search-buttons button {
+      background-color: #f8f8f8;
+      border: 1px solid #f8f8f8;
+      padding: 10px 24px;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 6px;
+      transition: all 0.2s;
+    }
+
+    .search-buttons button:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Button Focused Styling */
+    .search-buttons button:focus {
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(66, 133, 244, 0.6);
     }
   </style>
 </head>
 <body>
 
+  <!-- Google Logo -->
+  <div class="google-logo">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo-color-272x92.png" alt="Google Logo">
+  </div>
+
   <!-- Google Search Bar Interface -->
   <div class="google-search-container">
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="Search Google or type a URL">
-      <button onclick="performSearch()">Search</button>
+    </div>
+
+    <!-- Search Buttons -->
+    <div class="search-buttons">
+      <button onclick="performSearch()">Google Search</button>
+      <button onclick="performI’mFeelingLucky()">I'm Feeling Lucky</button>
     </div>
   </div>
 
@@ -76,6 +118,17 @@
       if (searchQuery.trim() !== "") {
         // Redirect to Google search results
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+      } else {
+        alert("Please enter a search term.");
+      }
+    }
+
+    // "I'm Feeling Lucky" Button
+    function performI’mFeelingLucky() {
+      const searchQuery = document.getElementById("searchInput").value;
+      if (searchQuery.trim() !== "") {
+        // Redirect to Google's "I'm Feeling Lucky" feature
+        window.location.href = `https://www.google.com/search?btnI=I&aqs=chrome..69i57j0i22i30l9.1890j0j7&pglt=43&q=${encodeURIComponent(searchQuery)}`;
       } else {
         alert("Please enter a search term.");
       }
