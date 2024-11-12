@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Search Bar Interface</title>
+  <title>Google Search Bar</title>
   <style>
     /* General Reset */
     * {
@@ -29,7 +30,7 @@
       margin-bottom: 20px;
     }
 
-    /* Search Bar Container */
+    /* Search Box Container */
     .google-search-container {
       text-align: center;
     }
@@ -107,7 +108,7 @@
     <!-- Search Buttons -->
     <div class="search-buttons">
       <button onclick="performSearch()">Google Search</button>
-      <button onclick="performI’mFeelingLucky()">I'm Feeling Lucky</button>
+      <button onclick="performImFeelingLucky()">I'm Feeling Lucky</button>
     </div>
   </div>
 
@@ -124,7 +125,7 @@
     }
 
     // "I'm Feeling Lucky" Button
-    function performI’mFeelingLucky() {
+    function performImFeelingLucky() {
       const searchQuery = document.getElementById("searchInput").value;
       if (searchQuery.trim() !== "") {
         // Redirect to Google's "I'm Feeling Lucky" feature
