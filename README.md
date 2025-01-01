@@ -37,7 +37,7 @@
 
     <script>
         const pdfFiles = [
-            { name: 'File 1', url: 'https://github.com/yourusername/yourrepository/raw/main/file1.pdf' },
+            { name:'File1',url:'https://github.com/googlefind/hi/blob/ee4e424ba466242d3399ef68ba132804c40b0065/Drawing%205%20Drawing%20v3.pdf' },
             { name: 'File 2', url: 'https://github.com/yourusername/yourrepository/raw/main/file2.pdf' },
             { name: 'File 3', url: 'https://github.com/yourusername/yourrepository/raw/main/file3.pdf' },
             { name: 'File 4', url: 'https://github.com/yourusername/yourrepository/raw/main/file4.pdf' },
