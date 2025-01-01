@@ -31,10 +31,10 @@
         }
 
         .image-container img {
-            max-width: 100%;
-             height: auto;
-            width: 300px;
-           
+           max-width: 300px; 
+            width: 100%;     
+            height: auto;    
+            border: 2px solid #4CAF50;
         }
     </style>
 </head>
