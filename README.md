@@ -32,7 +32,9 @@
 
         .image-container img {
             max-width: 100%;
-            height: auto;
+             height: auto;
+            width: 300px;
+           
         }
     </style>
 </head>
