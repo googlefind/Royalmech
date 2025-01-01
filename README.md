@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1>Copy Image from GitHub</h1>
-    <img id="github-image" src="https://raw.githubusercontent.com/user/repo/main/Screenshot 2025-01-01 193539.png" alt="GitHub Image" />
+    <img id="github-image" src="https://raw.githubusercontent.com/user/repo/main/Screenshot%202025-01-01%20193539.png" alt="GitHub Image" />
     <button id="copy-button">Copy Image</button>
 
     <canvas id="canvas" style="display: none;"></canvas>
@@ -38,13 +38,13 @@
             const ctx = canvas.getContext('2d');
 
             // Set canvas dimensions to match the image
-            canvas.width = img.width;
-            canvas.height = img.height;
+            canvas.width = img.naturalWidth; // Use naturalWidth for the original size
+            canvas.height = img.naturalHeight; // Use naturalHeight for the original size
 
             // Draw the image onto the canvas
             ctx.drawImage(img, 0, 0);
 
-            // Convert the canvas to a data URL
+            // Convert the canvas to a Blob and copy to clipboard
             canvas.toBlob(function(blob) {
                 const item = new ClipboardItem({ 'image/png': blob });
                 navigator.clipboard.write([item]).then(() => {
