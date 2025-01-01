@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copy Image from GitHub</title>
+    <title>Download PDF from GitHub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,48 +11,36 @@
             margin: 50px;
         }
 
-        #github-image {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        #copy-button {
+        #download-button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #download-button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Copy Image from GitHub</h1>
-    <img id="github-image" src="https://raw.githubusercontent.com/googlefind/hi/183a6dd268bd6803282c1f4831f2bc59292bacc0/Screenshot%202025-01-01%20193539.png" alt="GitHub Image" />
-    <button id="copy-button">Copy Image</button>
-
-    <canvas id="canvas" style="display: none;"></canvas>
+    <h1>Download PDF</h1>
+    <p>Click the button below to download the PDF file.</p>
+    
+    <button id="download-button">Download PDF</button>
 
     <script>
-        document.getElementById('copy-button').addEventListener('click', function() {
-            const img = document.getElementById('github-image');
-            const canvas = document.getElementById('canvas');
-            const ctx = canvas.getContext('2d');
-
-            // Set canvas dimensions to match the image
-            canvas.width = img.naturalWidth; // Use naturalWidth for the original size
-            canvas.height = img.naturalHeight; // Use naturalHeight for the original size
-
-            // Draw the image onto the canvas
-            ctx.drawImage(img, 0, 0);
-
-            // Convert the canvas to a Blob and copy to clipboard
-            canvas.toBlob(function(blob) {
-                const item = new ClipboardItem({ 'image/png': blob });
-                navigator.clipboard.write([item]).then(() => {
-                    alert('Image copied to clipboard!');
-                }).catch(err => {
-                    console.error('Failed to copy: ', err);
-                });
-            }, 'image/png');
+        document.getElementById('download-button').addEventListener('click', function() {
+            const pdfUrl = 'https://github.com/yourusername/yourrepository/raw/main/yourfile.pdf'; // Replace with your PDF file URL
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = 'yourfile.pdf'; // Specify the name for the downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
     </script>
 </body>
