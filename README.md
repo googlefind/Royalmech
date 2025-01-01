@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1>Copy Image from GitHub</h1>
-    <img id="github-image" src="https://github.com/googlefind/hi/blob/183a6dd268bd6803282c1f4831f2bc59292bacc0/Screenshot%202025-01-01%20193539.png" alt="GitHub Image" />
+    <img id="github-image" src="https://raw.githubusercontent.com/googlefind/hi/183a6dd268bd6803282c1f4831f2bc59292bacc0/Screenshot%202025-01-01%20193539.png" alt="GitHub Image" />
     <button id="copy-button">Copy Image</button>
 
     <canvas id="canvas" style="display: none;"></canvas>
