@@ -26,17 +26,33 @@
 </head>
 <body>
     <h1>Copy Image from GitHub</h1>
-    <img id="github-image" src="Screenshot 2025-01-01 193539.png" alt="GitHub Image" />
-    <button id="copy-button">Copy Image Link</button>
+    <img id="github-image" src="https://raw.githubusercontent.com/user/repo/main/" alt="GitHub Image" />
+    <button id="copy-button">Copy Image</button>
+
+    <canvas id="canvas" style="display: none;"></canvas>
 
     <script>
         document.getElementById('copy-button').addEventListener('click', function() {
-            const imageUrl = document.getElementById('github-image').src;
-            navigator.clipboard.writeText(imageUrl).then(() => {
-                alert('Image link copied to clipboard!');
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-            });
+            const img = document.getElementById('github-image');
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Set canvas dimensions to match the image
+            canvas.width = img.width;
+            canvas.height = img.height;
+
+            // Draw the image onto the canvas
+            ctx.drawImage(img, 0, 0);
+
+            // Convert the canvas to a data URL
+            canvas.toBlob(function(blob) {
+                const item = new ClipboardItem({ 'image/png': blob });
+                navigator.clipboard.write([item]).then(() => {
+                    alert('Image copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            }, 'image/png');
         });
     </script>
 </body>
