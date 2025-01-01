@@ -46,7 +46,7 @@
 
     <script>
         const pdfFiles = [
-            { name: 'File 1', url: 'https://github.com/googlefind/hi/blob/a3cc15f25d35bbd0c0ea3204d958b0c3d5454b4b/Drawing%205%20Drawing%20v3.pdf', imgUrl: 'https://github.com/googlefind/hi/blob/addb682a1e3af49bee42a6ebba24cc5527a6d877/Screenshot%202025-01-01%20193539.png' },
+            { name: 'Drawing 5 Drawing v3', url: 'https://github.com/googlefind/hi/blob/a3cc15f25d35bbd0c0ea3204d958b0c3d5454b4b/Drawing%205%20Drawing%20v3.pdf', imgUrl: 'https://github.com/googlefind/hi/blob/addb682a1e3af49bee42a6ebba24cc5527a6d877/Screenshot%202025-01-01%20193539.png' },
             { name: 'File 2', url: 'https://github.com/yourusername/yourrepository/raw/main/file2.pdf', imgUrl: 'https://example.com/image2.jpg' },
             { name: 'File 3', url: 'https://github.com/yourusername/yourrepository/raw/main/file3.pdf', imgUrl: 'https://example.com/image3.jpg' },
             { name: 'File 4', url: 'https://github.com/yourusername/yourrepository/raw/main/file4.pdf', imgUrl: 'https://example.com/image4.jpg' },
