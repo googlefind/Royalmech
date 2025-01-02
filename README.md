@@ -39,8 +39,8 @@
     </style>
 </head>
 <body>
-    <h1>Download PDFs</h1>
-    <p>Click the buttons below to download the PDF files.</p>
+    
+   
     
     <div id="buttons-container">
         <!-- Buttons and images will be generated here -->
@@ -85,7 +85,7 @@
             const button = document.createElement('a');
             button.href = file.url;
             button.className = 'download-button';
-            button.innerText = `Download ${file.name}`;
+            button.innerText = `_ ${file.name}`;
             button.target = '_blank';
 
             container.appendChild(img);
@@ -93,5 +93,6 @@
             buttonsContainer.appendChild(container);
         });
     </script>
+    <p>MR_VD</p>
 </body>
 </html>
