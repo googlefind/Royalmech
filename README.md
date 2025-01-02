@@ -53,7 +53,8 @@
             { name: 'Drawing 1', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file6.pdf', imgUrl: 'https://github.com/googlefind/hi/raw/edc4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193625.png' },
             { name: 'Drawing 0', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file7.pdf', imgUrl: 'https://github.com/googlefind/hi/raw/edc4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193633.png' },
             { name: 'Machine vice drawing v5', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file8.pdf', imgUrl: 'https://github.com/googlefind/hi/raw/edc4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193641.png' },
-            { name: 'Drawing 2 Drawing', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file9.pdf', imgUrl: 'https://github.com/googlefind/hi/raw/edc 4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193649.png' },
+            { name: 'Drawing 2 Drawing', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file9.pdf', imgUrl: 
+            'https://github.com/googlefind/hi/raw/edc 4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193649.png' },
             { name: 'Connecting Rod drawing', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file10.pdf', imgUrl: 'https://github.com/googlefind/hi/raw/edc4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193657.png' },
             { name: 'New File 1', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file11.pdf', imgUrl: 'https://github.com/googlefind/hi/raw/edc4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193710.png' },
             { name: 'New File 2', url: 'https://raw.githubusercontent.com/johnDoe/myRepo/main/file12.pdf', imgUrl: 'https://github.com/googlefind/hi/raw/edc4a78269a1cab678ce36d39babcf7aede7343b/Screenshot%202025-01-01%20193720.png' },
