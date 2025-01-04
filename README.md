@@ -55,8 +55,7 @@
             { name: 'Drawing 1', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%20Drawing%201.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193625.png' },
             { name: 'Drawing 0', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%200.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193633.png' },
             { name: 'Machine vice drawing v5', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Machine%20Vice%20Drawing%20v5.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193641.png' },
-            { name: 'Drawing 2 Drawing', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%202%20Drawing%20v3.pdf', imgUrl: 'https ://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193649.png' },
-            { name: 'Connecting Rod drawing', url: 'https://raw.githubusercontent.com/googlefind/hi/main/knuckle%20joint%202%20Drawing%20v2.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193857.png' },
+            { name: 'Drawing 2 Drawing', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%202%20Drawing%20v3.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193649.png { name: 'Connecting Rod drawing', url: 'https://raw.githubusercontent.com/googlefind/hi/main/knuckle%20joint%202%20Drawing%20v2.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193857.png' },
             { name: 'New File 1', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Protected%20Flanged%20Coupling%202%20Drawing%20v2.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193710.png' },
             { name: 'New File 2', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Thread%20Form%204%20Drawing%20v1.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193720.png' },
             { name: 'New File 3', url: 'https://raw.githubusercontent.com/googlefind/hi/main/4%20Drawing%20v3.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193727.png' },
@@ -72,11 +71,12 @@
             { name: 'model Tail Stock', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Model%20Tail%20Stock.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-04%20081045.png' },
         ];
 
-        const buttonsContainer = document.getElementById(' buttons-container');
+        const buttonsContainer = document.getElementById('buttons-container');
 
         pdfFiles.forEach(file => {
             const container = document.createElement('div');
-            container.className = 'image-container';
+            container.className ```html
+            = 'image-container';
 
             const img = document.createElement('img');
             img.src = file.imgUrl;
