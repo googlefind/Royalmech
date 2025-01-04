@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,8 +55,7 @@
             { name: 'Drawing 1', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%20Drawing%201.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193625.png' },
             { name: 'Drawing 0', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%200.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193633.png' },
             { name: 'Machine vice drawing v5', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Machine%20Vice%20Drawing%20v5.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193641.png' },
-            { name: 'Drawing 2 Drawing', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%202%20Drawing%20v3.pdf',imgUrl:
-            'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193649.png' },
+            { name: 'Drawing 2 Drawing', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%202%20Drawing%20v3.pdf', imgUrl: 'https ://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193649.png' },
             { name: 'Connecting Rod drawing', url: 'https://raw.githubusercontent.com/googlefind/hi/main/knuckle%20joint%202%20Drawing%20v2.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193857.png' },
             { name: 'New File 1', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Protected%20Flanged%20Coupling%202%20Drawing%20v2.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193710.png' },
             { name: 'New File 2', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Thread%20Form%204%20Drawing%20v1.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193720.png' },
@@ -71,10 +69,10 @@
             { name: 'New File 10', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%203%20Drawing%20v5.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193835.png' },
             { name: 'New File 11', url: 'https://raw.githubusercontent.com/googlefind/hi/main/hexagonal%20headed%20bolt%20Drawing%20v3.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193842.png' },
             { name: 'New File 12', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Connecting%20Rod%20Drawing%20v4.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193848.png' },
-             { name: 'model TAil Stock', url: 'https://github.com/googlefind/hi/blob/22f10458287d3be8af6e8e711cdef9e4f7a5db36/Model%20Tail%20Stock.pdf', imgUrl: 'https://github.com/googlefind/hi/blob/22f10458287d3be8af6e8e711cdef9e4f7a5db36/Screenshot%202025-01-04%20081045.png' },
+            { name: 'model Tail Stock', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Model%20Tail%20Stock.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-04%20081045.png' },
         ];
 
-        const buttonsContainer = document.getElementById('buttons-container');
+        const buttonsContainer = document.getElementById(' buttons-container');
 
         pdfFiles.forEach(file => {
             const container = document.createElement('div');
