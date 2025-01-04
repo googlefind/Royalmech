@@ -71,7 +71,7 @@
             { name: 'New File 10', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%203%20Drawing%20v5.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193835.png' },
             { name: 'New File 11', url: 'https://raw.githubusercontent.com/googlefind/hi/main/hexagonal%20headed%20bolt%20Drawing%20v3.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193842.png' },
             { name: 'New File 12', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Connecting%20Rod%20Drawing%20v4.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193848.png' },
-             { name: 'Drawing 5 Drawing v3', url: 'https://raw.githubusercontent.com/googlefind/hi/main/Drawing%205%20Drawing%20v3.pdf', imgUrl: 'https://raw.githubusercontent.com/googlefind/hi/main/Screenshot%202025-01-01%20193539.png' },
+             { name: 'Drawing 5 Drawing v3', url: 'https://github.com/googlefind/hi/blob/22f10458287d3be8af6e8e711cdef9e4f7a5db36/Model%20Tail%20Stock.pdf', imgUrl: 'https://github.com/googlefind/hi/blob/22f10458287d3be8af6e8e711cdef9e4f7a5db36/Screenshot%202025-01-04%20081045.png' },
         ];
 
         const buttonsContainer = document.getElementById('buttons-container');
